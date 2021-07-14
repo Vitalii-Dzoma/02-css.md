@@ -1,6 +1,6 @@
 body {
   font-family: Roboto, sans-serif;
-  color: var(--primary-text-color); */
+  color: var(--primary-text-color); 
 }
 
 /* цвет основного текста #212121 */
@@ -29,10 +29,15 @@ h1 {
 
 h2, h3 {
     line-height: var(--title-line-height);
-    font-weight: var(--middle-font-weight);
 }
 .button{
     line-height: 1.88;
+    font-size: 16px;
+    font-family: inherit;
+}
+.button:hover,
+.button:focus {
+    color: var(--accent-color);
 }
 
 .title {
@@ -50,9 +55,7 @@ font-size: 16px;
 .img-title {
     font-weight: var(--medium-font-weight);
 }
-.img-title+.title-text {
-    font-weight: 400;
-}
+
 .section-title>ul{
     font-size: 14px;
     line-height: var(--text-line-height);
@@ -65,6 +68,7 @@ font-size: 16px;
 .link {
   color: var(--primary-text-color);
   font-size: 14px;
+  text-decoration: none;
 }
 
 .link:hover,
@@ -113,7 +117,6 @@ font-size: 16px;
 .item-text {
   font-size: 16px;
   line-height: 1.88;
-  font-weight: 400;
 }
 
 .pict {
