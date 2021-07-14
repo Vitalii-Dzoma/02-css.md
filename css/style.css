@@ -7,15 +7,60 @@ body {
 /* вторичный цвет текста #757575 */
 /* цвет фона #E5E5E5 */
 /* акцент #2196F3 */
+/* цвет ссылок в футере color: rgba(255, 255, 255, 0.6);*/
 
 :root {
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --backround-color: #e5e5e5;
   --accent-color: #2196f3;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+  --large-font-weight: font-weight: 900;
+  --middle-font-weight: font-weight: 700;
+  --medium-font-weight: font-weight: 500;
+  --title-line-height: line-height: 1.17;
+  --text-line-height: line-height: 1.71;
+}
+
+h1 {
+    line-height: 1.36;
+    font-weight: var(--large-font-weight);
+}
+
+h2, h3 {
+    line-height: var(--title-line-height);
+    font-weight: var(--middle-font-weight);
+}
+.button{
+    line-height: 1.88;
+}
+
+.title {
+    font-size: 44px;
+}
+.titles {
+    font-size: 36px;
+}
+.description {
+    font-size: 14px;
+}
+.titles>.item, .img-title {
+font-size: 16px;
+}
+.img-title {
+    font-weight: var(--medium-font-weight);
+}
+.img-title+.title-text {
+    font-weight: 400;
+}
+.section-title>ul{
+    font-size: 14px;
+    line-height: var(--text-line-height);
 }
 
 .page-header {
+    line-height: var(--title-line-height);
+    font-weight: var(--medium-font-weight);
 }
 .link {
   color: var(--primary-text-color);
@@ -23,7 +68,10 @@ body {
 }
 
 .link:hover,
-.link:focus {
+.link:focus,
+.link-address:hover,
+.link-address:focus
+ {
   color: var(--accent-color);
 }
 
@@ -33,8 +81,10 @@ body {
 .portfolio-btn {
   color: var(--primary-text-color);
   font-family: Roboto;
+  font-weight: var(--medium-font-weight);
   font-size: 18px;
   cursor: pointer;
+  line-height: 1.63;
 }
 
 .portfolio-btn:hover,
@@ -45,21 +95,36 @@ body {
   color: var(--accent-color);
 }
 
-.navigation {
+/* .navigation {
   font-size: 14px;
+} */
+
+.address{
+  list-style: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: var(--text-line-height);
 }
 
-.item-footer, .location {
-  list-style: none;
-  font-size: 14px;
+.link-address, p {
+ color: var(--secondary-text-color);
 }
+
 .item-text {
   font-size: 16px;
+  line-height: 1.88;
+  font-weight: 400;
 }
+
 .pict {
+    
 }
 .item-title {
   font-size: 18px;
+  line-height: 2;
 }
-.item-text {
+.img-title+p {
+  line-height: inherit;
+  font-weight: var(--medium-font-weight);
 }
+
