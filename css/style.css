@@ -1,6 +1,6 @@
 body {
   font-family: Roboto, sans-serif;
-  color: var(--primary-text-color); 
+  color: var(--primary-text-color);
 }
 
 /* цвет основного текста #212121 */
@@ -11,83 +11,86 @@ body {
 
 :root {
   --primary-text-color: #212121;
+  --primary-backround-color: #ffffff;
   --secondary-text-color: #757575;
   --backround-color: #e5e5e5;
   --accent-color: #2196f3;
+  --secondary-background-color: #f5f4fa;
   --footer-link-color: rgba(255, 255, 255, 0.6);
-  --large-font-weight: font-weight: 900;
-  --bold-font-weight: font-weight: 700;
-  --medium-font-weight: font-weight: 500;
-  --title-line-height: line-height: 1.17;
-  --text-line-height: line-height: 1.71;
+  --large-font-weight: 900;
+  --bold-font-weight: 700;
+  --medium-font-weight: 500;
+  --title-line-height: 1.17;
+  --text-line-height: 1.71;
 }
 
-h1 {
-    line-height: 1.36;
-    font-weight: var(--large-font-weight);
+.title {
+  line-height: 1.36;
+  font-weight: var(--large-font-weight);
 }
 
-h2, h3 {
-    line-height: var(--title-line-height);
+.titles .description {
+  line-height: var(--title-line-height);
 }
 
 /* header */
 .page-header {
-    line-height: var(--title-line-height);
-    font-weight: var(--medium-font-weight);
+  line-height: var(--title-line-height);
+  font-weight: var(--medium-font-weight);
 }
 /* logo */
-.page-header>.link,
-.page-footer>.link{
-    font-family: Raleway, sans-serif;
-    font-size: 24px;
-    letter-spacing: 0.03em;
-    line-height: 1.19;
+.page-header > .link,
+.page-footer > .link {
+  font-family: Raleway, sans-serif;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+  line-height: 1.19;
 }
 
-.web-logo{
-    color: var(--accent-color);
+.web-logo {
+  color: var(--accent-color);
 }
 
 /* h1 */
 .title {
-    font-size: 44px;
-    text-align: center;
+  font-size: 44px;
+  text-align: center;
 }
 .titles {
-    font-size: 36px;
+  font-size: 36px;
 }
 .description {
-    font-size: 14px;
+  font-size: 14px;
 }
-.titles>.item, .img-title {
-font-size: 16px;
+.titles > .item,
+.img-title {
+  font-size: 16px;
 }
 .img-title {
-    font-weight: var(--medium-font-weight);
+  font-weight: var(--medium-font-weight);
 }
 
 /* section */
-.button{
-    line-height: 1.88;
-    font-size: 16px;
-    font-family: inherit;
+.button {
+  line-height: 1.88;
+  font-size: 16px;
+  font-family: inherit;
 }
 .button:hover,
 .button:focus {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .button.primary {
-    color: #FFFFFF;
-    background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: var(--accent-color);
+  font-weight: var(--bold-font-weight);
 }
 
-.section-title>ul{
-    font-size: 14px;
-    line-height: var(--text-line-height);
+.section-title > ul {
+  font-size: 14px;
+  line-height: var(--text-line-height);
 }
-
 
 .link {
   color: var(--primary-text-color);
@@ -98,8 +101,7 @@ font-size: 16px;
 .link:hover,
 .link:focus,
 .link-address:hover,
-.link-address:focus
- {
+.link-address:focus {
   color: var(--accent-color);
 }
 
@@ -118,23 +120,31 @@ font-size: 16px;
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   background-color: var(--accent-color);
+  color: var(--backround-color);
 }
 .current {
   color: var(--accent-color);
 }
 
+.team {
+  background-color: var(--secondary-background-color);
+}
 /* .navigation {
   font-size: 14px;
 } */
 
-.address{
+.address {
   list-style: none;
   font-style: normal;
   line-height: var(--text-line-height);
 }
 
-.link-address, p {
- color: var(--secondary-text-color);
+.link-address,
+p {
+  color: var(--secondary-text-color);
+}
+.link-address {
+  text-decoration: none;
 }
 
 .item-text {
@@ -143,14 +153,16 @@ font-size: 16px;
 }
 
 .pict {
-    
 }
 .item-title {
   font-size: 18px;
   line-height: 2;
 }
-.img-title+p {
+.img-title + p {
   line-height: inherit;
   font-weight: var(--medium-font-weight);
 }
-
+.location {
+  font-size: 14px;
+  /* color: var(----primary-backround-color) поставим после изменения фона */
+}
