@@ -68,6 +68,7 @@ body {
 }
 .img-title {
   font-weight: var(--medium-font-weight);
+  line-height: var(--title-line-height);
 }
 
 /* section */
@@ -82,7 +83,7 @@ body {
 }
 
 .button.primary {
-  color: #ffffff;
+  color: var(--primary-backround-color);
   background-color: var(--accent-color);
   font-weight: var(--bold-font-weight);
 }
